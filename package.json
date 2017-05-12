@@ -3,15 +3,20 @@
   "version": "1.0.1",
   "description": "Keystone 4 CLI to help set up projects",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noviny/kescli.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "keystone",
-    "ks"
+    "ks",
+    "cli"
   ],
   "author": "Ben Conolly",
-  "license": "ISC",
+  "license": "MIT",
   "bin": "./index.js",
   "dependencies": {
     "minimum-viable-keystone": "git+https://github.com/noviny/minimum-viable-keystone"
