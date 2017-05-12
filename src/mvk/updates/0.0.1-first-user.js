@@ -1,8 +1,8 @@
 exports.create = {
-	User: [
-		{
-			email: 'user@keystonejs.com',
-			password: 'admin',
-		},
-	],
+    User: [
+        {
+            email: 'user@keystonejs.com',
+            password: 'admin'
+        }
+    ]
 };
