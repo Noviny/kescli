@@ -7,14 +7,23 @@ const baseDirs = [
     'models',
     'routes',
     'updates',
+    'templates',
 ]
+
+const nestedDirs = [
+    'routes/views',
+    'templates/views',
+];
 
 const neededFiles = [
     'keystone.js',
     'package.json',
+    '.gitignore',
     'updates/0.0.1-first-user.js',
     'routes/index.js',
-    'models/User.js'
+    'routes/views/index.js',
+    'models/User.js',
+    'templates/views/index.pug'
 ]
 
 function copyFile(src, dest) {
@@ -49,6 +58,11 @@ const allThatSetup = () => {
       if(err.errno !== -2) throw new Error('The directory already exists! This process would overwrite it.')
       makeNewDir(baseDir)
         .then(() => baseDirs.map(dir => {
+            const newDir = path.join(baseDir, dir);
+            return makeNewDir(newDir)
+        }))
+        .then((res) => Promise.all(res))
+        .then(() => nestedDirs.map(dir => {
             const newDir = path.join(baseDir, dir);
             return makeNewDir(newDir)
         }))
