@@ -1,0 +1,23 @@
+{
+  "name": "kescli",
+  "version": "0.0.0",
+  "description": "Keystone 4 CLI to help setup projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "keystone",
+    "ks"
+  ],
+  "author": "Ben Conolly",
+  "license": "ISC",
+  "bin": "./index.js",
+  "dependencies": {
+    "minimum-viable-keystone": "git+https://github.com/noviny/minimum-viable-keystone"
+  },
+  "devDependencies": {
+    "jest": "^20.0.1",
+    "prettier": "^1.3.1"
+  }
+}
