@@ -1,6 +1,6 @@
 {
   "name": "kescli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Keystone 4 CLI to help set up projects",
   "main": "index.js",
   "repository": {
