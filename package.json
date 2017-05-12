@@ -1,7 +1,7 @@
 {
   "name": "kescli",
-  "version": "0.0.0",
-  "description": "Keystone 4 CLI to help setup projects",
+  "version": "1.0.0",
+  "description": "Keystone 4 CLI to help set up projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
