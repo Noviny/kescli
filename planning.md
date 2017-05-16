@@ -2,8 +2,8 @@
 
 ## Major features
 
-- Generate a Keystone MVK file structure
-- Set up keystone with react, webpack
+- Generate a Keystone MVK file structure ✅✅
+- Set up keystone with react, webpack ✅✅
+- Create, update and validate models from command line
 - Add and modify KSJS settings in keystone.js file
 - Add/remove routes
-- 
