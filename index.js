@@ -44,7 +44,7 @@ const allThatSetup = (newDir, oldDir = 'mvk') => {
         .then(() => copyFiles(destination, origin))
         .then(
             console.log(
-                `Completed Setting up your files. Run 'cd ${destination} && yarn' to complete your setup.`
+                `Completed Setting up your files. Run 'cd ${newDir} && yarn' to complete your setup.`
             )
         )
         .catch(err => {
