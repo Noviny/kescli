@@ -26,7 +26,6 @@ const copyFiles = (destination, origin) => {
         const cp = spawn('cp', ['-r', origin, destination]);
         cp.stderr.on('data', data => reject(new Error({ err: data })));
         cp.on('close', () => {
-            console.log('complete');
             resolve();
         });
     });
